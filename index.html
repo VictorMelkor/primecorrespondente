@@ -46,14 +46,6 @@
 
   <!-- ======= CSS Principal ======= -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- ======= Aplicar tema (evitar flicker) ======= -->
-  <script>
-    (function () {
-      const storedTheme = localStorage.getItem('theme') || 'light';
-      document.documentElement.setAttribute('data-bs-theme', storedTheme);
-    })();
-  </script>
 </head>
 
 <body>
@@ -68,8 +60,7 @@
 
         <!-- Logo -->
         <a class="navbar-brand w-auto" href="index.html">
-          <img class="logo dark img-fluid" src="assets/images/logo.png"
-            alt="Logotipo Prime Correspondente Bancário (versão clara)">
+          <img class="logo dark img-fluid" src="assets/images/logo.png" alt="Logotipo Prime Correspondente Bancário ">
         </a>
         <!-- Fim Logo -->
 
@@ -79,10 +70,8 @@
           <div class="offcanvas-header">
             <div class="offcanvas-header-logo">
               <a class="logo-link" id="fbs__net-navbarsLabel" href="index.html">
-                <img class="logo dark img-fluid" src="assets/images/logo-dark.svg"
-                  alt="Logotipo Prime Correspondente Bancário (versão escura)">
-                <img class="logo light img-fluid" src="assets/images/logo-light.svg"
-                  alt="Logotipo Prime Correspondente Bancário (versão clara)">
+                <img class="logo dark img-fluid" src="assets/images/logo.png"
+                  alt="Logotipo Prime Correspondente Bancário">
               </a>
             </div>
             <button class="btn-close btn-close-black" type="button" data-bs-dismiss="offcanvas"
@@ -96,7 +85,7 @@
               <li class="nav-item"><a class="nav-link scroll-link" href="#about">Sobre Nós</a></li>
               <li class="nav-item"><a class="nav-link scroll-link" href="#pricing">Simulações</a></li>
               <li class="nav-item"><a class="nav-link scroll-link" href="#services">Serviços</a></li>
-              <li class="nav-item"><a class="nav-link scroll-link" href="#faq">Perguntas Frequentes</a></li>
+              <li class="nav-item"><a class="nav-link scroll-link" href="#faq">FAQ</a></li>
               <li class="nav-item"><a class="nav-link scroll-link" href="#contact">Contato</a></li>
             </ul>
           </div>
@@ -105,7 +94,7 @@
 
         <div class="ms-auto w-auto">
           <div class="header-social d-flex align-items-center gap-1">
-            <a class="btn btn-primary py-2" href="#contact">Solicitar Atendimento</a>
+            <a class="btn btn-primary py-2" href="https://wa.me/5512988882468?text=Ol%C3%A1%2C%20quero%20falar%20sobre%20empr%C3%A9stimos." target="_blank">Fale Conosco</a>
 
             <!-- Botão de menu (mobile) -->
             <button class="fbs__net-navbar-toggler justify-content-center align-items-center ms-auto"
@@ -161,7 +150,7 @@
                   </p>
 
                   <div class="cta d-flex gap-2 mb-4 mb-lg-5" data-aos="fade-up" data-aos-delay="300">
-                    <a class="btn btn-primary" href="#simulacao">Simule seu empréstimo</a>
+                    <a class="btn btn-primary" href="#pricing">Simule seu empréstimo</a>
                     <a class="btn btn-white-outline" href="#about">
                       Saiba Mais
                       <svg class="lucide lucide-arrow-up-right" xmlns="http://www.w3.org/2000/svg" width="18"
@@ -178,12 +167,16 @@
                     <span class="logos-title text-uppercase mb-4 d-block">
                       Parceiro autorizado de grandes bancos
                     </span>
-                    <div class="logos-images d-flex gap-4 align-items-center">
-                      <img class="img-fluid" src="assets/images/bb_logo.png" alt="Banco do Brasil"
+                    <div class="logos-images d-flex flex-wrap gap-4 align-items-center">
+                      <img class="img-fluid" src="assets/images/logo-bancodobrasil-03.png" alt="Banco do Brasil"
                         style="width: 120px;">
-                      <img class="img-fluid" src="assets/images/caixa_logo.png" alt="Caixa Econômica Federal"
+                      <img class="img-fluid" src="assets/images/Bancopanlogo.png" alt="Banco Pan" style="width: 120px;">
+                      <img class="img-fluid" src="assets/images/Grupo_Safra_logo.png" alt="Banco Safra"
                         style="width: 120px;">
-                      <img class="img-fluid" src="assets/images/bradesco_logo.png" alt="Bradesco" style="width: 120px;">
+                      <img class="img-fluid" src="assets/images/Logo_do_Banco_Bmg.svg.png" alt="Banco BMG"
+                        style="width: 120px;">
+                      <img class="img-fluid" src="assets/images/1.png" alt="Banco Mercantil" style="width: 120px;">
+                      <img class="img-fluid" src="assets/images/2.png" alt="Banco Daycoval" style="width: 120px;">
                     </div>
                   </div>
 
@@ -194,9 +187,9 @@
             <!-- Imagem -->
             <div class="col-lg-6">
               <div class="hero-img"><img class="img-card img-fluid aos-init aos-animate"
-                  src="assets/images/card-expenses.png" alt="Image card" data-aos="fade-down" data-aos-delay="600"><img
-                  class="img-main img-fluid rounded-4 aos-init aos-animate" src="assets/images/hero.jpg"
-                  alt="Hero Image" data-aos="fade-in" data-aos-delay="500"></div>
+                  src="assets/images/card-experience.png" alt="Image card" data-aos="fade-down"
+                  data-aos-delay="600"><img class="img-main img-fluid rounded-4 aos-init aos-animate"
+                  src="assets/images/hero.jpg" alt="Hero Image" data-aos="fade-in" data-aos-delay="500"></div>
             </div>
 
           </div>
@@ -323,9 +316,8 @@
                             </p>
                           </div>
                           <div class="align-self-start">
-                            <a class="glightbox btn btn-outline-primary d-inline-flex align-items-center gap-2"
-                              href="https://www.youtube.com/watch?v=DQx96G4yHd8" data-gallery="video">
-                              <i class="bi bi-play-fill"></i> Conheça como funciona
+                            <a class="btn btn-outline-primary d-inline-flex align-items-center gap-2" href="#pricing">
+                              Peça uma simulação
                             </a>
                           </div>
                         </div>
@@ -393,8 +385,8 @@
             <div class="col-md-5 mx-auto text-center">
               <span class="subtitle text-uppercase text-primary mb-3" data-aos="fade-up">Simulação</span>
               <h2 class="mb-3 fw-bold" data-aos="fade-up" data-aos-delay="100">Solicite uma simulação de crédito</h2>
-              <p class="text" data-aos="fade-up" data-aos-delay="200">Experimente o futuro das finanças com nossos
-                serviços financeiros seguros, eficientes e fáceis de usar.</p>
+              <p class="text" data-aos="fade-up" data-aos-delay="200">Planeje seu futuro financeiro de forma segura e
+                prática. Experimente nossos serviços de crédito rápidos, confiáveis e totalmente transparentes</p>
             </div>
           </div>
 
@@ -406,7 +398,8 @@
                 <h3 class="mb-4 fw-bold">Como funciona a simulação</h3>
                 <p>
                   Preencha os dados do formulário e clique em <strong>Simular</strong>.
-                  Sua solicitação será enviada via Whatsapp para o correspondente bancário, que entrará em contato para tratar sua proposta de empréstimo de forma personalizada.
+                  Sua solicitação será enviada via Whatsapp para o correspondente bancário, que entrará em contato para
+                  tratar sua proposta de empréstimo de forma personalizada.
                 </p>
                 <p>
                   Todas as informações são mantidas em sigilo e a simulação é rápida, prática e sem compromisso.
@@ -478,7 +471,7 @@
               </div>
             </div>
 
-            
+
           </div>
 
 
@@ -495,8 +488,8 @@
           <div class="row mb-5">
             <div class="col-md-8 mx-auto text-center">
               <span class="subtitle text-uppercase mb-3" data-aos="fade-up" data-aos-delay="0">Nossos Serviços</span>
-              <h2 class="mb-3" data-aos="fade-up" data-aos-delay="100">Potencializando a Inovação Financeira Através de
-                Serviços de Ponta</h2>
+              <h2 class="mb-3" data-aos="fade-up" data-aos-delay="100">Inovação e Excelência em Serviços de Empréstimos
+              </h2>
             </div>
           </div>
           <div class="row g-4">
@@ -610,93 +603,116 @@
             <div class="col-md-6 col-lg-7 mx-auto text-center">
               <span class="subtitle text-uppercase mb-3" data-aos="fade-up" data-aos-delay="0">FAQ</span>
               <h2 class="h2 fw-bold mb-3" data-aos="fade-up" data-aos-delay="0">Perguntas Frequentes</h2>
-              <p data-aos="fade-up" data-aos-delay="100">Utilize nossas ferramentas para desenvolver seus conceitos e
-                dar vida à sua visão. Quando concluído, compartilhe suas criações de forma simples.</p>
+              <p data-aos="fade-up" data-aos-delay="100">Esclareça suas dúvidas e tome decisões financeiras com mais
+                segurança e confiança.</p>
             </div>
           </div>
           <div class="row">
             <div class="col-md-8 mx-auto" data-aos="fade-up" data-aos-delay="200">
               <div class="faq-content">
                 <div class="accordion custom-accordion" id="accordionPanelsStayOpenExample">
+
                   <div class="accordion-item">
                     <h2 class="accordion-header">
                       <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-                        aria-controls="panelsStayOpen-collapseOne"> Quais serviços sua agência web oferece? </button>
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Quem pode contratar o empréstimo consignado?
+                      </button>
                     </h2>
-                    <div class="accordion-collapse collapse show" id="panelsStayOpen-collapseOne">
-                      <div class="accordion-body">Nossa agência web oferece uma gama completa de serviços, incluindo
-                        design e desenvolvimento de sites, soluções de e-commerce, otimização SEO, criação de conteúdo,
-                        manutenção de sites e estratégias de marketing digital. Adaptamos nossos serviços às
-                        necessidades únicas de cada cliente, garantindo uma abordagem personalizada para cada projeto.
+                    <div class="accordion-collapse collapse show" id="collapseOne">
+                      <div class="accordion-body">
+                        Podem contratar aposentados, pensionistas do INSS, servidores públicos e militares. Nosso
+                        processo é simples e rápido, garantindo crédito seguro direto na folha ou benefício.
                       </div>
                     </div>
                   </div>
+
                   <div class="accordion-item">
                     <h2 class="accordion-header">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseTwo"> Quanto custa construir um site? </button>
-                    </h2>
-                    <div class="accordion-collapse collapse" id="panelsStayOpen-collapseTwo">
-                      <div class="accordion-body">O custo para construir um site pode variar bastante, dependendo da
-                        complexidade, funcionalidades e requisitos específicos do seu projeto. Oferecemos diversos
-                        pacotes de preços para atender diferentes orçamentos e necessidades. Após uma consulta inicial,
-                        podemos fornecer um orçamento detalhado com base em seus objetivos específicos.</div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseThree"> Quanto tempo leva para projetar e desenvolver um
-                        site? </button>
-                    </h2>
-                    <div class="accordion-collapse collapse" id="panelsStayOpen-collapseThree">
-                      <div class="accordion-body">O prazo para projetar e desenvolver um site depende da complexidade e
-                        do escopo do projeto. Normalmente, um site empresarial padrão leva cerca de 4 a 6 semanas para
-                        ser concluído, enquanto projetos mais complexos, como sites de e-commerce ou aplicações
-                        personalizadas, podem levar mais tempo. Trabalhamos em estreita colaboração com nossos clientes
-                        para estabelecer um cronograma realista e mantê-los informados durante todo o processo.</div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseFour"> Meu site será compatível com dispositivos móveis?
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Precisa de fiador ou consulta ao SPC?
                       </button>
                     </h2>
-                    <div class="accordion-collapse collapse" id="panelsStayOpen-collapseFour">
-                      <div class="accordion-body">Com certeza! Todos os sites que projetamos e desenvolvemos são
-                        totalmente responsivos, ou seja, otimizados para funcionar perfeitamente em todos os
-                        dispositivos, incluindo desktops, tablets e smartphones. Garantir uma excelente experiência em
-                        dispositivos móveis é uma prioridade no nosso processo de desenvolvimento.</div>
+                    <div class="accordion-collapse collapse" id="collapseTwo">
+                      <div class="accordion-body">
+                        Não! Para empréstimos consignados não é necessário fiador nem consulta ao SPC/Serasa, pois o
+                        desconto é feito diretamente na folha de pagamento ou benefício, garantindo maior segurança e
+                        facilidade.
+                      </div>
                     </div>
                   </div>
+
                   <div class="accordion-item">
                     <h2 class="accordion-header">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseFive"> Vocês oferecem suporte e manutenção contínuos para
-                        sites? </button>
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Qual o prazo para liberação do dinheiro?
+                      </button>
                     </h2>
-                    <div class="accordion-collapse collapse" id="panelsStayOpen-collapseFive">
-                      <div class="accordion-body">Sim, oferecemos serviços contínuos de suporte e manutenção para
-                        garantir que seu site permaneça atualizado, seguro e funcionando corretamente. Nossos pacotes de
-                        manutenção podem incluir atualizações regulares, monitoramento de segurança, backups e suporte
-                        técnico para resolver quaisquer problemas que possam surgir. Estamos aqui para ajudá-lo a manter
-                        seu site funcionando de forma eficiente muito depois do lançamento.</div>
+                    <div class="accordion-collapse collapse" id="collapseThree">
+                      <div class="accordion-body">
+                        O prazo varia conforme o tipo de crédito: para consignado, o valor é liberado geralmente em até
+                        24 horas; para crédito pessoal, em até 48 horas, proporcionando agilidade para suas necessidades
+                        financeiras.
+                      </div>
                     </div>
                   </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Posso portar meu empréstimo para reduzir a parcela?
+                      </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" id="collapseFour">
+                      <div class="accordion-body">
+                        Sim! Analisamos sua operação atual e oferecemos condições mais vantajosas, com taxas reduzidas e
+                        parcelas ajustadas para o seu orçamento.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Como funciona o Saque-Aniversário FGTS?
+                      </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" id="collapseFive">
+                      <div class="accordion-body">
+                        O Saque-Aniversário permite que você receba parte do saldo do FGTS anualmente, sem precisar se
+                        desligar da empresa. O valor é depositado diretamente em sua conta, oferecendo flexibilidade
+                        financeira.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        Vocês cobram taxas extras?
+                      </button>
+                    </h2>
+                    <div class="accordion-collapse collapse" id="collapseSix">
+                      <div class="accordion-body">
+                        Não cobramos nenhuma taxa adicional! Não solicitamos valores para análise ou liberação de
+                        crédito, garantindo transparência e segurança para você.
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
               </div>
             </div>
           </div>
         </div>
         <!-- End FAQ-->
-
       </section>
+
       <!-- End FAQ-->
 
       <!-- ======= Contact =======-->
@@ -711,27 +727,49 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-6">
-              <div class="d-flex gap-5 flex-column">
-                <div class="d-flex align-items-start gap-3" data-aos="fade-up" data-aos-delay="0">
-                  <div class="icon d-block"><i class="bi bi-telephone"></i></div>
-                  <span> <span class="d-block">Telefone</span><strong>(12) 98888-2468</strong></span>
-                </div>
-                <div class="d-flex align-items-start gap-3" data-aos="fade-up" data-aos-delay="100">
-                  <div class="icon d-block"><i class="bi bi-send"></i></div>
-                  <span> <span class="d-block">Email</span><strong>lidia.amorim.mota@gmail.com</strong></span>
-                </div>
-                <div class="d-flex align-items-start gap-3" data-aos="fade-up" data-aos-delay="200">
-                  <div class="icon d-block"><i class="bi bi-geo-alt"></i></div>
-                  <span> <span class="d-block">Endereço</span>
-                    <address class="fw-bold"><span>Rua tal, Pindamonhangaba, <br> São Paulo, Brasil</span></address>
-                  </span>
-                </div>
-              </div>
-            </div>
+  <!-- Coluna esquerda: informações de contato -->
+  <div class="col-md-6">
+    <div class="d-flex gap-5 flex-column">
+      <div class="d-flex align-items-start gap-3" data-aos="fade-up" data-aos-delay="0">
+        <div class="icon d-block"><i class="bi bi-whatsapp"></i></div>
+        <span>
+          <span class="d-block">Telefone</span>
+          <a href="https://wa.me/5512988882468?text=Ol%C3%A1%2C%20quero%20falar%20sobre%20empr%C3%A9stimos." target="_blank"><strong>(12) 98888-2468</strong></a>
+        </span>
+      </div>
+      <div class="d-flex align-items-start gap-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="icon d-block"><i class="bi bi-send"></i></div>
+        <span>
+          <span class="d-block">Email</span>
+          <strong>lidia.amorim.mota@gmail.com</strong>
+        </span>
+      </div>
+      <div class="d-flex align-items-start gap-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="icon d-block"><i class="bi bi-geo-alt"></i></div>
+        <span>
+          <span class="d-block">Endereço</span>
+          <address class="fw-bold">
+            <span>Rua tal, Pindamonhangaba, <br> São Paulo, Brasil</span>
+          </address>
+        </span>
+      </div>
+    </div>
+  </div>
 
-          </div>
-        </div>
+  <!-- Coluna direita: mapa -->
+  <div class="col-md-6">
+    <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:8px;">
+      <iframe 
+        src="https://www.google.com/maps?q=Pindamonhangaba&z=13&output=embed"
+        style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</div>
+
       </section>
       <!-- End Contact-->
 
@@ -741,8 +779,10 @@
           <div class="row justify-content-between mb-5 g-xl-5">
             <div class="col-md-4 mb-5 mb-lg-0">
               <h3 class="mb-3">Sobre</h3>
-              <p class="mb-4">Utilize nossas ferramentas para desenvolver seus conceitos e dar vida à sua visão. Quando
-                concluído, compartilhe suas criações de forma simples.</p>
+              <p class="hero-description mb-4 mb-lg-5" data-aos="fade-up" data-aos-delay="200">
+                <strong>Prime Correspondente Bancário</strong>, conectamos você às melhores
+                opções de crédito, com total transparência, taxas justas e atendimento humanizado.
+              </p>
             </div>
             <div class="col-md-7">
               <div class="row g-2">
@@ -769,7 +809,7 @@
                       Paulo, Brasil</span></p>
                   <a class="d-flex mb-3" href="mailto:lidia.amorim.mota@gmail.com"><i
                       class="bi bi-envelope-fill me-3"></i><span>lidia.amorim.mota@gmail.com</span></a>
-                  <a class="d-flex mb-3" href="tel://+123456789900"><i class="bi bi-telephone-fill me-3"></i><span>(12)
+                  <a class="d-flex mb-3" href="https://wa.me/5512988882468?text=Ol%C3%A1%2C%20quero%20falar%20sobre%20empr%C3%A9stimos." target="_blank"><i class="bi bi-telephone-fill me-3"></i><span>(12)
                       98888-2468</span></a>
                 </div>
               </div>
@@ -779,7 +819,7 @@
             <div class="col-xl-8 text-center text-xl-start mb-3 mb-xl-0">
               &copy;
               <script>document.write(new Date().getFullYear());</script> Prime Correspondente Bancário.
-              Todos os direitos reservados. Desenvolvido por <a href="https://victormelkor.github.io">Victor
+              Todos os direitos reservados. <br>Desenvolvido por <a href="https://victormelkor.github.io">Victor
                 Rodrigues</a>
             </div>
 
