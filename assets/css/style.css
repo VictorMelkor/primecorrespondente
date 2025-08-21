@@ -854,6 +854,9 @@ a {
   justify-content: center;
 }
 
+  .img-card {
+    top: 300px;
+  }
 }
 
 .features__v2 .icon {
