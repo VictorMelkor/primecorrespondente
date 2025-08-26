@@ -82,8 +82,13 @@ a {
   scroll-margin-top: 60px;
 }
 
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
 .swiper-slide img{
-max-height: 650px;
+max-height: 550px;
 }
 
 
