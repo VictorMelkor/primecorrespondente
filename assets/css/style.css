@@ -81,6 +81,12 @@ a {
   padding: 70px 0;
   scroll-margin-top: 60px;
 }
+
+.swiper-slide img{
+max-height: 650px;
+}
+
+
 @media (max-width: 767.98px) {
   .section {
     padding: 40px 0;
