@@ -25,7 +25,7 @@ function enviarWhatsApp() {
     • *Parcelas:* ${parcelas}`;
 
     // número do admin (exemplo)
-    const numeroAdmin = "5562982147845"; 
+    const numeroAdmin = "5512988882468"; 
 
     // link personalizado
     const url = `https://wa.me/${numeroAdmin}?text=${mensagem}`;
